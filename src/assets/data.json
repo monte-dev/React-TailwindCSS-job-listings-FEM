@@ -122,7 +122,7 @@
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "./images/eyecam-co.svg",
+    "logo": "/images/eyecam-co.svg",
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
