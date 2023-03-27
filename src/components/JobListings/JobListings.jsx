@@ -3,7 +3,7 @@ import Job from '../Job/Job';
 
 const JobListings = () => {
 	return (
-		<main className="jobListings bg-background p-4">
+		<main className="jobListings p-2">
 			{data.map((job) => {
 				return <Job {...job} />;
 			})}
