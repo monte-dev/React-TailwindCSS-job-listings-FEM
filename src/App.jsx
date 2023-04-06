@@ -1,13 +1,26 @@
 import { useState } from 'react';
-import { Filters, Job, JobListings } from './components';
+import { Filters, JobListings } from './components';
 
 function App() {
-	const [count, setCount] = useState(0);
+	// initialize state to empty array
+	const [selectedTags, setSelectedTags] = useState([]);
 
+	const handleTagClick = (tag) => {
+		if (!selectedTags.includes(tag)) {
+			setSelectedTags([...selectedTags, tag]);
+		}
+	};
+
+	const removeTag = (tag) => {
+		setSelectedTags(selectedTags.filter((t) => t !== tag));
+	};
 	return (
-		<div className=" bg-background h-full font-main text-dark-200">
-			<Filters />
-			<JobListings />
+		<div className="bg-background h-full font-main text-dark-200">
+			<Filters selectedTags={selectedTags} removeTag={removeTag} />
+			<JobListings
+				selectedTags={selectedTags}
+				handleTagClick={handleTagClick}
+			/>
 		</div>
 	);
 }
