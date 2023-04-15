@@ -17,7 +17,6 @@ const Job = (props) => {
 	const handleTagClick = (tag) => {
 		props.handleTagClick(tag);
 	};
-
 	return (
 		<article className="m-3 mb-10 p-0 bg-white rounded transition-all duration-125 ease-in hover:border-l-[5px] hover:border-primary hover:cursor-pointer flex flex-col md:flex-row md:justify-between relative shadow-lg">
 			<div className="flex">

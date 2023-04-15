@@ -9,7 +9,7 @@ const JobListings = ({ selectedTags, handleTagClick }) => {
 	if (selectedTags.length > 0) {
 		return (
 			<main className="jobListings p-2 container md:max-w-fit m-auto">
-				{data.map((job, index) => {
+				{data.filter(filterJobs).map((job, index) => {
 					return (
 						<Job
 							key={job.id}
