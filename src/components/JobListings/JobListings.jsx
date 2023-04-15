@@ -6,19 +6,34 @@ const JobListings = ({ selectedTags, handleTagClick }) => {
 		const tags = [job.role, job.level, ...job.languages, ...job.tools];
 		return selectedTags.every((tag) => tags.includes(tag));
 	};
-
-	return (
-		<main className="jobListings p-2 container md:max-w-fit m-auto">
-			{data.map((job, index) => {
-				return (
-					<Job
-						key={job.id}
-						handleTagClick={handleTagClick}
-						{...job}
-					/>
-				);
-			})}
-		</main>
-	);
+	if (selectedTags.length > 0) {
+		return (
+			<main className="jobListings p-2 container md:max-w-fit m-auto">
+				{data.map((job, index) => {
+					return (
+						<Job
+							key={job.id}
+							handleTagClick={handleTagClick}
+							{...job}
+						/>
+					);
+				})}
+			</main>
+		);
+	} else {
+		return (
+			<main className="jobListings p-2 container md:max-w-fit m-auto">
+				{data.map((job, index) => {
+					return (
+						<Job
+							key={job.id}
+							handleTagClick={handleTagClick}
+							{...job}
+						/>
+					);
+				})}
+			</main>
+		);
+	}
 };
 export default JobListings;

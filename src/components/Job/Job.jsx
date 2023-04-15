@@ -50,7 +50,7 @@ const Job = (props) => {
 			<ul className="flex flex-wrap text-sm md:items-center mx-3 mb-3 md:mb-0 border-t-2 border-t-accent pt-2 md:pt-0 md:border-0">
 				<li
 					className="bg-accent text-primary font-bold py-1 px-2 m-1 hover:text-white hover:bg-primary"
-					onClick={handleTagClick(role)}
+					onClick={() => handleTagClick(role)}
 				>
 					{role}
 				</li>

@@ -14,9 +14,17 @@ function App() {
 	const removeTag = (tag) => {
 		setSelectedTags(selectedTags.filter((t) => t !== tag));
 	};
+
+	const removeAllTags = () => {
+		setSelectedTags([]);
+	};
 	return (
 		<div className="bg-background h-full font-main text-dark-200">
-			<Filters selectedTags={selectedTags} removeTag={removeTag} />
+			<Filters
+				selectedTags={selectedTags}
+				removeTag={removeTag}
+				removeAllTags={removeAllTags}
+			/>
 			<JobListings
 				selectedTags={selectedTags}
 				handleTagClick={handleTagClick}
