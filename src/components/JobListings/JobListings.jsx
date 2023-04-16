@@ -8,7 +8,7 @@ const JobListings = ({ selectedTags, handleTagClick }) => {
 	};
 	if (selectedTags.length > 0) {
 		return (
-			<main className="jobListings p-2 container md:max-w-fit m-auto">
+			<main className="jobListings p-2 pt-0 container md:max-w-fit m-auto">
 				{data.filter(filterJobs).map((job, index) => {
 					return (
 						<Job
@@ -22,7 +22,7 @@ const JobListings = ({ selectedTags, handleTagClick }) => {
 		);
 	} else {
 		return (
-			<main className="jobListings p-2 container md:max-w-fit m-auto">
+			<main className="jobListings p-2 pt-10 container md:max-w-fit m-auto">
 				{data.map((job, index) => {
 					return (
 						<Job

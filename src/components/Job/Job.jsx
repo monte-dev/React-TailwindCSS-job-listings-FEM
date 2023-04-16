@@ -24,8 +24,8 @@ const Job = (props) => {
 					className="absolute -inset-y-[45px] scale-[.575] md:relative md:-inset-0 md:p-4 md:scale-[.95]"
 					src={`/src/assets/` + logo}
 				></img>
-				<div className="ml-3 px-2 pt-7 md:pt-4 pb-3">
-					<div className="flex my-2">
+				<div className="ml-1 px-3 pt-7 md:pt-4 pb-3 md:px-1">
+					<div className="flex mb-2">
 						<h3 className="text-primary font-bold mr-3">
 							{company}
 						</h3>
@@ -40,7 +40,9 @@ const Job = (props) => {
 							</span>
 						) : null}
 					</div>
-					<h4 className="font-bold hover:text-primary">{position}</h4>
+					<h4 className="font-bold hover:text-primary mb-1">
+						{position}
+					</h4>
 					<span className="text-sm text-dark-100">
 						{postedAt} &#183; {contract} &#183; {location}
 					</span>

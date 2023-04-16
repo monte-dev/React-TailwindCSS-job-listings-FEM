@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Filters, JobListings } from './components';
+import { Filters, JobListings, Header } from './components';
 
 function App() {
 	// initialize state to empty array
@@ -19,7 +19,8 @@ function App() {
 		setSelectedTags([]);
 	};
 	return (
-		<div className="bg-background h-full font-main text-dark-200">
+		<div className="bg-background min-h-screen  font-main text-dark-200">
+			<Header />
 			<Filters
 				selectedTags={selectedTags}
 				removeTag={removeTag}
