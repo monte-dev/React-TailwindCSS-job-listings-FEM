@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/reacttailwind-css-job-listings-with-filtering--VhD4P8GVH)
 -   Live Site URL: [Add live site URL here](https://joblistings-react-tailwind.netlify.app)
 
 ## My process
