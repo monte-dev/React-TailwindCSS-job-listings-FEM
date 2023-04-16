@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-README-template.md
-README.md
+
 style-guide.md
 /design

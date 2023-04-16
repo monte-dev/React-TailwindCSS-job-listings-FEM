@@ -22,7 +22,8 @@ const Job = (props) => {
 			<div className="flex">
 				<img
 					className="absolute -inset-y-[45px] scale-[.575] md:relative md:-inset-0 md:p-4 md:scale-[.95]"
-					src={`/src/assets/` + logo}
+					src={`${logo}`}
+					alt={`${company} logo`}
 				></img>
 				<div className="ml-1 px-3 pt-7 md:pt-4 pb-3 md:px-1">
 					<div className="flex mb-2">

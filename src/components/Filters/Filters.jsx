@@ -1,5 +1,4 @@
 const Filters = ({ selectedTags, removeTag, removeAllTags }) => {
-	console.log(selectedTags);
 	if (selectedTags < 1) {
 		return <div></div>;
 	}
